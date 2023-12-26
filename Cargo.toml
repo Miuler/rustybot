@@ -1,0 +1,17 @@
+[package]
+name = "rustybot"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+async-openai = "0.17.1"
+dotenvy = "0.15.7"
+dotenv_config = "0.1.6"
+tokio = { version = "1.0.0", features = ["rt", "rt-multi-thread", "macros"] }
+log4rs = "1.2.0"
+chrono = "0.4.31"
+log = "0.4.20"
+indoc = "2.0.4"
+config = "0.13.4"

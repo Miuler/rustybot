@@ -1,0 +1,21 @@
+#refresh_rate: 30 seconds
+
+appenders:
+  stdout:
+    kind: console
+    encoder:
+      pattern: "{h({d(%Y-%m-%d %H:%M:%S)} - {l}: {m}{n})}"
+  requests:
+    kind: file
+    path: "rustybot.log"
+    encoder:
+      pattern: "{d} - {m}{n}"
+
+root:
+  level: info
+  appenders:
+    - stdout
+
+loggers:
+  rustybot:
+    level: debug
